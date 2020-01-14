@@ -1,0 +1,361 @@
+body
+{
+    background-color: #fff;
+    font-family: Poppins;
+}
+
+#fda_app
+{
+    padding-left: 50px;
+    padding-top: 10px;
+    overflow-x: hidden;
+}
+
+#fda_app > section
+{
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+#fda_side_bar
+{
+    width: 50px;
+    height: 100%;
+    background-color: rgba(220,230,252,0.6);
+    color: #261d56;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    border-radius: 0 0px 0px 0;
+}
+
+#fda_side_bar .menu_icon,
+#fda_side_bar .menu_filter
+{
+    padding-top: 10px;
+    height: 10%;
+}
+
+#fda_side_bar .menu
+{
+    height: 80%;
+}
+
+.menu
+{
+    transform-origin: top left;
+    transform: rotate(-90deg) translateX(-1150%);
+    margin-left: 18.5px;
+}
+
+.menu ul
+{
+    position: relative;
+    padding: 0;
+    width: 500px;
+    bottom: 0;
+}
+
+.menu li
+{
+    position: relative;
+    list-style: none;
+    float: left;
+    margin: 0 15px;
+    font-size: 10px;
+    color: rgba(38, 29, 86, 0.5);
+}
+
+.menu li.active{
+    font-weight: 600;
+    color: rgba(38, 29, 86, 1);
+}
+
+.menu li.active:before
+{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    display: block;
+    background-color: rgba(255,0,0,0.6);
+    border-radius: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+}
+
+/** Start Section Header Bar **/
+
+#fda_header_bar
+{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(38, 29, 86, 1);
+}
+
+#fda_header_bar span
+{
+    font-weight: 400;
+    color: rgba(38, 29, 86, 0.8);
+}
+
+.fda_search_row
+{
+    position: relative;
+    margin-top: 25px;
+}
+
+.fda_search_row .fda_ip_search
+{
+    border: none;
+    background-color: #f9f9f9;
+    font-size: 12px;
+    width: 100%;
+    padding: 15px 15px;
+    padding-left: 45px;
+    border-radius: 50px;
+}
+
+.fda_search_row .fa-search
+{
+    position: absolute;
+    font-size: 14px;
+    margin-top: 18px;
+    margin-left: 18px;
+}
+
+/** End Section Header Bar **/
+
+/** Start Section Body Part 1 **/
+
+.fda_food_row
+{
+    flex-wrap: nowrap;
+}
+
+.fda_food_row > .col-9
+{
+    max-width: 245px;
+}
+
+.fda_food_row > div:not(:first-child)
+{
+    margin-left: -15px;
+}
+
+#fda_product_tile
+{
+    margin-top: 80px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#fda_product_tile span
+{
+    display: block;
+}
+
+.fda_food_row div.food_tile
+{
+    background-color: rgba(0,0,0,0.05);
+    font-size: 11px;
+    padding: 0 25px;
+    border-radius: 25px;
+}
+
+.fda_food_row div.food_tile.active
+{
+    background-color: rgba(220,230,252,1);
+}
+
+.fda_food_row div.food_tile img
+{
+    position: relative;
+    width: 150px;
+    border-radius: 100%;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.05);
+    box-shadow: inset 0 0 25px rgba(255,255,255,0.15),
+                inset 0 4px 0 rgba(0,0,0,0.05),
+                inset 0 -4px 0 rgba(0,0,0,0.05),
+                inset 0 10px 10px rgba(0,0,0,0.09),
+                0 1px 0px rgba(0,0,0,0.1),
+                0 8px 7px rgba(0,0,0,0.15);
+    border: 1px solid rgba(0,0,0,0.1);
+    margin-top: -60px;
+    margin-bottom: 18px;
+}
+
+div.food_tile.active img
+{
+    background-color: rgba(220,230,252,0.85); 
+}
+
+.food_name
+{
+    font-size: 15px;
+    font-weight: 600;
+    color: rgba(38, 29, 86, 1);
+    margin-bottom: 12px;
+}
+
+.food_detail
+{
+    font-size: 10px;
+    color: rgba(38, 29, 86, 0.4);
+    margin-bottom: 15px;   
+}
+
+#food_meta
+{
+    margin: 0;
+    padding: 0;
+}
+
+#food_meta li
+{
+    list-style: none;
+    float: left;
+    width: 50%;
+    margin-bottom: 25px;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(38, 29, 86, 1);
+}
+
+#food_meta li span
+{
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(38, 29, 86, 0.5);   
+}
+
+.btn-default
+{
+    border: 1px solid rgba(0,0,0,0.5);
+    margin-bottom: 15px;
+    padding: 12px 40px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    background-color: transparent;
+    color: rgba(0,0,0,0.8);
+}
+
+.active .btn-default
+{
+    border: 1px solid rgba(0,0,0,0.04);
+    background-color: #f88e7c;
+    color: #fff;
+    box-shadow: 0 5px 1px rgba(248,142,124,0.7);
+}
+/** End Section Body Part 1 **/
+
+/** Start Section Body Part 2 **/
+
+.fda_section_product_tile
+{
+    position: relative;
+    padding-bottom: 25px !important;;
+}
+
+.fda_section_product_tile:nth-child(odd)
+{
+    background: rgba(0,0,0,0.02);
+}
+
+.fda_title_row
+{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(38, 29, 86, 1);
+}
+
+.fda_section_row
+{
+    margin-top: 20px;
+    flex-wrap: nowrap;
+}
+
+.fda_section_row .section_product_tile
+{
+    max-width: 272px;
+}
+
+.fda_section_row div > span
+{
+    display: block;
+}
+
+.fda_section_row img
+{
+    position: relative;
+    width: 100px;
+    border-radius: 100%;
+    padding: 15px;
+    background-color: rgba(0,0,0,0.05);
+    box-shadow: inset 0 0 25px rgba(255,255,255,0.15),
+                inset 0 4px 0 rgba(0,0,0,0.05),
+                inset 0 -4px 0 rgba(0,0,0,0.05),
+                inset 0 10px 10px rgba(0,0,0,0.09),
+                0 1px 0px rgba(0,0,0,0.1),
+                0 8px 7px rgba(0,0,0,0.15);
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.fda_section_row .section_meta
+{
+    margin-left: 35px;
+    line-height: 18px;
+}
+
+.fda_section_row .product_title
+{
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(38, 29, 86, 1);
+}
+
+.fda_section_row .product_rating
+{
+    font-size: 10px;
+    color: #ffc75b;
+}
+
+.fda_section_row .product_rating .rating_avg
+{
+    margin-left: 4px;
+    color: rgba(38, 29, 86, 0.5);
+}
+
+.fda_section_row .product_price
+{
+    font-size: 11px;
+    font-weight: 500;
+    color: rgba(38, 29, 86, 0.5);
+}
+
+
+/** End Section Body Part 2 **/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
